@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dosen Jurnal Work</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Dosen Jurnal">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#2b1d63">
+<style>
+  html,body{margin:0;height:100%;background:#effaf6}
+  iframe{position:fixed;inset:0;width:100%;height:100%;border:0}
+  #cad{position:fixed;inset:auto 0 0 0;padding:10px 16px;font:14px system-ui,sans-serif;background:#fff;color:#123;text-align:center;display:none}
+</style>
+</head>
+<body>
+<!-- ISI SATU BARIS INI dengan alamat /exec aplikasi Anda -->
+<iframe id="app" title="Dosen Jurnal Work" allow="clipboard-write; fullscreen"></iframe>
+<div id="cad">Aplikasi belum tampil? <a id="lnk" href="#">Buka langsung</a></div>
+<script>
+  var APP_URL = 'GANTI_DENGAN_ALAMAT_EXEC_ANDA';
+  document.getElementById('app').src = APP_URL;
+  document.getElementById('lnk').href = APP_URL;
+  setTimeout(function () { document.getElementById('cad').style.display = 'block'; }, 6000);
+</script>
+</body>
+</html>
